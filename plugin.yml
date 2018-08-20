@@ -1,0 +1,6 @@
+name: CommandMaker
+version: 1.0
+main: me.ryandw11.commandmaker.CommandMaker
+author: Ryandw11
+description: Test
+api-version: 1.13

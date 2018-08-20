@@ -1,0 +1,38 @@
+PlayerOnly: true
+#
+#   Example.yml
+#  /example ingame.
+#
+######################
+#  Required Elements:
+######################
+Aliases:
+    - ex
+    - eg
+Description: 'An Example Command.'
+UsageMessage: '/example (string)'
+Settings:
+    NotAPlayerError: '&cThat player is not a valid player'
+    PlayerNotOnlineError: '&cThat player is not currently online!'
+
+Argument:
+    number: 2
+    not-enough-args: 'There are not enough arguments!'
+    arg1: 'string'
+    arg2: 'player'
+    
+###########################################################
+#             You setup the command here.                 #
+###########################################################
+
+message: '&6Hello there {arg1}!'
+kill: {arg2}
+executecommands:
+    - 'kill {arg2}'
+
+permission: 'test.me'
+permission-deny: '&cYou do not have permission for this command.'
+
+particle: ''
+
+sound: ''
